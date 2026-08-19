@@ -8,27 +8,28 @@
 <style>
 :root{--green:#1f3024;--deep:#0b100d;--gold:#c6a15b;--cream:#f4eedf;--muted:#c9c2b4}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--deep);color:#fff;font-family:Arial,sans-serif;line-height:1.6}a{text-decoration:none;color:inherit}
-.container{width:min(1180px,92%);margin:auto}nav{position:fixed;top:0;width:100%;z-index:9;background:#0b100ddd;backdrop-filter:blur(12px);border-bottom:1px solid #c6a15b44}.nav{height:72px;display:flex;justify-content:space-between;align-items:center}.logo{font:24px Georgia;color:var(--gold);letter-spacing:2px}.logo small{display:block;font:9px Arial;letter-spacing:4px;text-align:center;color:#fff}.links{display:flex;gap:25px;text-transform:uppercase;font-size:11px;letter-spacing:1.5px}.links a:hover{color:var(--gold)}
-.hero{min-height:100vh;padding:130px 0 70px;display:flex;align-items:center;background:linear-gradient(90deg,#09100ceF,#09100c99,#09100c33),url("https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1800&q=85") center/cover}.heroGrid{display:grid;grid-template-columns:1fr .8fr;gap:55px;align-items:center}.kicker{color:var(--gold);letter-spacing:5px;font-size:11px;text-transform:uppercase}.hero h1{font:normal clamp(54px,8vw,100px)/.92 Georgia;margin:18px 0}.gold{color:var(--gold)}.hero p{max-width:620px;color:#ddd6c9;font-size:18px}.btn{display:inline-block;padding:14px 22px;margin:12px 8px 0 0;border:1px solid var(--gold);color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:2px}.primary{background:var(--gold);color:#111}.heroImg{border:1px solid #c6a15b66;padding:9px}.heroImg img{width:100%;height:500px;object-fit:cover;display:block}
-section{padding:100px 0}.light{background:var(--cream);color:var(--green)}.head{max-width:760px;margin-bottom:42px}.head h2{font:normal clamp(38px,5vw,62px)/1.05 Georgia;margin:10px 0}.lead{color:var(--muted);font-size:17px}.light .lead{color:#596052}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:28px;border:1px solid #c6a15b66;background:#172219}.light .card{background:#ebe2ce}.card h3{font:normal 25px Georgia;color:var(--gold);margin:0 0 10px}.card p,.card li{font-size:14px;color:var(--muted)}.light .card p{color:#596052}
-.services{background:#101811}.servicesGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.service{padding:24px;min-height:150px;background:#172219;border:1px solid #c6a15b33}.service .icon{font-size:30px;color:var(--gold)}.service h3{font:normal 21px Georgia;margin:10px 0}.service p{font-size:13px;color:var(--muted)}
-.workGrid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:15px}.work{height:300px;position:relative;overflow:hidden}.work.tall{height:615px;grid-row:span 2}.work img{width:100%;height:100%;object-fit:cover}.work:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,#000b)}.caption{position:absolute;z-index:2;bottom:18px;left:20px}.caption h3{font:normal 25px Georgia;margin:0}.caption p{font-size:12px;color:#ddd}
-.price .amount{font:44px Georgia;color:var(--gold);margin:12px 0}.price ul{list-style:none;padding:0}.price li{padding:7px 0;border-bottom:1px solid #c6a15b33}.featured{background:var(--green);transform:translateY(-8px)}
+.container{width:min(1180px,92%);margin:auto}nav{position:fixed;top:0;width:100%;z-index:9;background:#0b100ddd;backdrop-filter:blur(12px);border-bottom:1px solid #c6a15b44}.nav{height:72px;displa[...]
+.hero{min-height:100vh;padding:130px 0 70px;display:flex;align-items:center;background:linear-gradient(90deg,#09100ceF,#09100c99,#09100c33),url("https://images.unsplash.com/photo-1617038220319-276[...]
+section{padding:100px 0}.light{background:var(--cream);color:var(--green)}.head{max-width:760px;margin-bottom:42px}.head h2{font:normal clamp(38px,5vw,62px)/1.05 Georgia;margin:10px 0}.lead{color:var([...]
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:28px;border:1px solid #c6a15b66;background:#172219}.light .card{background:#ebe2ce}.card h3{font:normal 25px Georgia;colo[...]
+.services{background:#101811}.servicesGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.service{padding:24px;min-height:150px;background:#172219;border:1px solid #c6a15b33}.service .icon[...]
+.workGrid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:15px}.work{height:300px;position:relative;overflow:hidden}.work.tall{height:615px;grid-row:span 2}.work img{width:100%;height:100%;obje[...]
+.price .amount{font:44px Georgia;color:var(--gold);margin:12px 0}.price ul{list-style:none;padding:0}.price li{padding:7px 0;border-bottom:1px solid #c6a15b33}.featured{background:var(--green);transfo[...]
 .cta{text-align:center;background:linear-gradient(120deg,#243326,#101710)}.cta h2{font:normal clamp(40px,6vw,70px)/1.05 Georgia;max-width:850px;margin:15px auto}
 footer{padding:35px 0;background:#080c09;border-top:1px solid #c6a15b33;color:var(--muted)}.footer{display:flex;justify-content:space-between;gap:20px}.goldText{color:var(--gold)}
-@media(max-width:850px){.links{display:none}.heroGrid{grid-template-columns:1fr}.heroImg{display:none}.grid3,.servicesGrid{grid-template-columns:1fr 1fr}.workGrid{grid-template-columns:1fr 1fr}.work.tall{height:400px}.featured{transform:none}}
+@media(max-width:850px){.links{display:none}.heroGrid{grid-template-columns:1fr}.heroImg{display:none}.grid3,.servicesGrid{grid-template-columns:1fr 1fr}.workGrid{grid-template-columns:1fr 1fr}.work.t[...]
 @media(max-width:560px){section{padding:70px 0}.grid3,.servicesGrid,.workGrid{grid-template-columns:1fr}.hero h1{font-size:58px}.work.tall{height:400px}.footer{display:block}}
 </style>
 </head>
 <body>
-<nav><div class="container nav"><a class="logo" href="#">TALES OF BRIGHTEYE<small>COMPANY</small></a><div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#packages">Packages</a><a href="#contact">Contact</a></div></div></nav>
+<nav><div class="container nav"><a class="logo" href="#">TALES OF BRIGHTEYE<small>COMPANY</small></a><div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#work">Wo[...]
 
-<header class="hero"><div class="container heroGrid"><div><div class="kicker">Luxury Content Partner</div><h1>Your Brand.<br><span class="gold">Seen Differently.</span></h1><p>We create cinematic content, campaign films and social-first visuals for brands that want to be remembered.</p><a class="btn primary" href="#contact">Start a Project</a><a class="btn" href="https://www.instagram.com/tales_of_brighteye" target="_blank">View Instagram</a></div><div class="heroImg"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1000&q=85" alt="Luxury jewellery"></div></div></header>
 
-<section id="about" class="light"><div class="container"><div class="head"><div class="kicker">01 / About</div><h2>Content that captures.<br><span class="gold">Stories that sell.</span></h2><p class="lead">Tales of BrightEye Company is a creative content company based in Mysuru, helping premium brands turn products, collections and experiences into compelling visual stories.</p></div><div class="grid3"><div class="card"><h3>Vision</h3><p>To become a trusted visual content partner for ambitious premium brands.</p></div><div class="card"><h3>Mission</h3><p>To create cinematic, strategic content that elevates brand perception and drives attention.</p></div><div class="card"><h3>Values</h3><p>Creativity. Quality. Consistency. Storytelling. Reliable partnerships.</p></div></div></div></section>
+<header class="hero"><div class="container heroGrid"><div><div class="kicker">Luxury Content Partner</div><h1>Your Brand.<br><span class="gold">Seen Differently.</span></h1><p>We create cinematic [...]
 
-<section id="services" class="services"><div class="container"><div class="head"><div class="kicker">02 / What We Create</div><h2>Visuals built for <span class="gold">attention.</span></h2></div><div class="servicesGrid">
+<section id="about" class="light"><div class="container"><div class="head"><div class="kicker">01 / About</div><h2>Content that captures.<br><span class="gold">Stories that sell.</span></h2><p cla[...]
+
+<section id="services" class="services"><div class="container"><div class="head"><div class="kicker">02 / What We Create</div><h2>Visuals built for <span class="gold">attention.</span></h2></div><div [...]
 <div class="service"><div class="icon">◈</div><h3>Brand Films</h3><p>Cinematic films that communicate identity, heritage and emotion.</p></div>
 <div class="service"><div class="icon">◇</div><h3>Jewellery Campaigns</h3><p>Macro product visuals, model campaigns and collection launches.</p></div>
 <div class="service"><div class="icon">◌</div><h3>Ethnic Wear</h3><p>Editorial model shoots, lookbooks and festive campaigns.</p></div>
@@ -39,21 +40,16 @@ footer{padding:35px 0;background:#080c09;border-top:1px solid #c6a15b33;color:va
 <div class="service"><div class="icon">◎</div><h3>Hospitality</h3><p>Cafés, restaurants, pubs, resorts and lifestyle experiences.</p></div>
 </div></div></section>
 
-<section id="work"><div class="container"><div class="head"><div class="kicker">03 / Selected Direction</div><h2>Make the product<br><span class="gold">the hero.</span></h2><p class="lead">Replace the sample images below with your actual portfolio.</p></div><div class="workGrid">
-<div class="work tall"><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1200&q=85"><div class="caption"><h3>Jewellery</h3><p>Luxury campaign direction</p></div></div>
-<div class="work"><img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=85"><div class="caption"><h3>Ethnic</h3><p>Editorial storytelling</p></div></div>
-<div class="work"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85"><div class="caption"><h3>Hospitality</h3><p>Atmosphere & experience</p></div></div>
+<section id="work"><div class="container"><div class="head"><div class="kicker">03 / Selected Direction</div><h2>Make the product<br><span class="gold">the hero.</span></h2><p class="lead">Replace[...]
+<div class="work tall"><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1200&q=85"><div class="caption"><h3>Jewellery</h3><p>Luxury campaign direction<[...]
+<div class="work"><img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=85"><div class="caption"><h3>Ethnic</h3><p>Editorial storytelling</p></div></d[...]
+<div class="work"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85"><div class="caption"><h3>Hospitality</h3><p>Atmosphere & experience</p></d[...]
 <div class="work"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85"><div class="caption"><h3>Fashion</h3><p>Model & lifestyle</p></div></div>
 <div class="work"><img src="https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?auto=format&fit=crop&w=900&q=85"><div class="caption"><h3>Product</h3><p>Detail-driven visuals</p></div></div>
 </div></div></section>
 
-<section id="packages" class="light"><div class="container"><div class="head"><div class="kicker">04 / Monthly Partnerships</div><h2>A content system,<br><span class="gold">not a one-off shoot.</span></h2></div><div class="grid3">
-<div class="card price"><h3>Essential</h3><div class="amount">₹20K</div><p>For brands starting their content journey.</p><ul><li>8 Reels</li><li>20 Edited Photos</li><li>1 Shoot Day</li><li>Basic Stories</li></ul></div>
-<div class="card price featured"><h3>Signature ★</h3><div class="amount">₹35K</div><p>For brands seeking consistent growth.</p><ul><li>16 Reels</li><li>50 Edited Photos</li><li>2 Shoot Days</li><li>Model / Lifestyle Content</li><li>Story Content</li></ul></div>
-<div class="card price"><h3>Elite</h3><div class="amount">₹50K+</div><p>For campaigns and ongoing premium content.</p><ul><li>Weekly Content</li><li>Campaign Films</li><li>Launch Coverage</li><li>Ad Creatives</li><li>Priority Delivery</li></ul></div>
-</div></div></section>
 
-<section id="contact" class="cta"><div class="container"><div class="kicker">05 / Let's Create</div><h2>Let's make your brand <span class="gold">impossible to ignore.</span></h2><p class="lead">Tell us about your next collection, campaign or launch.</p><a class="btn primary" href="https://wa.me/917619586265?text=Hi%20Tales%20of%20BrightEye%20Company%2C%20I%27d%20like%20to%20discuss%20a%20content%20project." target="_blank">WhatsApp Us</a><a class="btn" href="mailto:talesofbrighteye@gmail.com">Email Us</a></div></section>
+<section id="contact" class="cta"><div class="container"><div class="kicker">05 / Let's Create</div><h2>Let's make your brand <span class="gold">impossible to ignore.</span></h2><p class="lead">Tell u[...]
 
-<footer><div class="container footer"><div><b class="goldText">TALES OF BRIGHTEYE COMPANY</b><br>Luxury Content Partner for Premium Brands</div><div>+91 76195 86265<br>@tales_of_brighteye<br>Mysuru, Karnataka</div></div></footer>
+<footer><div class="container footer"><div><b class="goldText">TALES OF BRIGHTEYE COMPANY</b><br>Luxury Content Partner for Premium Brands</div><div>+91 76195 86265<br>@tales_of_brighteye<br>Mysur[...]
 </body></html>
